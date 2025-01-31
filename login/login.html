@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <title>Log In Form</title>
+
+</head>
+<body>
+<div class="background-blur"></div>
+<div class="content">
+    <div class="form-container">
+        <h2>შესვლა</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">მეილი</label>
+                <input id="email" type="email" placeholder="შეიყვანეთ მეილი" aria-describedby="emailError">
+                <div id="emailError" class="error" hidden>Email is required or invalid.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">პაროლი</label>
+                <input id="password" type="password" placeholder="შეიყვანეთ პაროლი" aria-describedby="passwordError">
+                <div id="passwordError" class="error" hidden>Password is required.</div>
+            </div>
+
+            <div id="loginError" class="error" hidden>Invalid login credentials.</div>
+
+            <button type="submit" class="loginBtn">შესვლა</button>
+            <button type="button" id="createAccount" class="createOne">რეგისტრაცია</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
