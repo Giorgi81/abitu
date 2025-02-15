@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             auth.signInWithEmailAndPassword(emailInput.value, passwordInput.value)
                 .then((userCredential) => {
-                    alert("Login successful!");
                     window.location.href = '../main/main.html';
                 })
                 .catch((error) => {
