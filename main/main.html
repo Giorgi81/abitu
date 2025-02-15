@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,47 +15,22 @@
     </div>
 
     <ul class="nav-list">
-        <li class="nav-item"><a href="#home">თამარ მეფე</a></li>
-        <li class="nav-item"><a href="#services">დავით აღამაშენებელი</a></li>
-        <li class="nav-item"><a href="#about">ბაგრატ III</a></li>
-        <li class="nav-item"><a href="#contact">გიორგი III</a></li>
-        <li class="nav-item"><a href="#profile">ვახტანგ გორგასალი</a></li>
-        <li class="nav-item"><a href="#profile">ერეკლე II</a></li>
-        <li class="nav-item"><a href="#profile">გიორგი V</a></li>
-        <li class="nav-item"><a href="#profile">ბაგრატ V</a></li>
+        <li class="nav-item" data-king="tamar"><a href="#">თამარ მეფე</a></li>
+        <li class="nav-item" data-king="davit"><a href="#">დავით აღმაშენებელი</a></li>
+        <li class="nav-item" data-king="bagrat3"><a href="#">ბაგრატ III</a></li>
+        <li class="nav-item" data-king="giorgi3"><a href="#">გიორგი III</a></li>
+        <li class="nav-item" data-king="vakhtang"><a href="#">ვახტანგ გორგასალი</a></li>
+        <li class="nav-item" data-king="erekle"><a href="#">ერეკლე II</a></li>
+        <li class="nav-item" data-king="giorgi5"><a href="#">გიორგი V</a></li>
+        <li class="nav-item" data-king="bagrat5"><a href="#">ბაგრატ V</a></li>
         <li class="nav-item logout-btn">
-            <a href="../login/login.html">გასვლა</a>
+            <a href="../login/login.html" id="exit">გასვლა</a>
         </li>
     </ul>
 </nav>
 
-<div class="main">
-    <h4>
-        "ABITU" არის ინოვაციური პროექტი, რომელიც მიზნად ისახავს აბიტურიენტებს დაეხმაროს საქართველოს ისტორიის შესწავლაში. ჩვენი საიტი გთავაზობთ საიმედო და გასაგებ გზამკვლევს, რომელიც განკუთვნილია ისტორიის ყველა მნიშვნელოვან პერიოდსა და მოვლენაზე, რათა ახალგაზრდებს დაეხმაროს წარმატებულად მოემზადონ ეროვნული გამოცდებისთვის.
-    </h4>
-
-    <p>
-        პროექტი შეიცავს:
-    </p>
-
-    <ul>
-        <li>
-            <p><strong>საგანმანათლებლო რესურსები:</strong> დეტალური ინფორმაცია საქართველოს სხვადასხვა ისტორიულ პერიოდში, მათ შორის უძველესი პერიოდი, საქართველოს სამეფოები, არქეოლოგიური აღმოჩენები, რელიგიური და კულტურული განვითარების საფეხურები.</p>
-        </li>
-        <li>
-            <p><strong>თეორია და ტესტები:</strong> ამოცანების, კითხვებისა და ტესტების ბაზა, რომელიც საშუალებას აძლევს სტუდენტებს, მოემზადონ ეროვნულ გამოცდებზე.</p>
-        </li>
-        <li>
-            <p><strong>ინტერაქტიული რუკები და ცხრილები:</strong> ისტორიული მოვლენების ვიზუალური ასახვა, რომლებიც უფრო მარტივს ხდის გეოგრაფიულ და პოლიტიკურ ცვლილებებზე ორიენტირებულ ინფორმაციას.</p>
-        </li>
-        <li>
-            <p><strong>ისტორიული პერსონაჟები:</strong> გრძელი სია საქართველოს მნიშვნელოვანი მეფეების, იმპერატორებისა და სხვა ისტორიული ფიგურების შესახებ, რომლებიც მნიშვნელოვან როლს ასრულებდნენ ქვეყნის განვითარებაში.</p>
-        </li>
-        <li>
-            <p><strong>მომავალი აბიტურიენტებისთვის გზამკვლევი:</strong> პროექტის მიზანია, არა მხოლოდ ცოდნის გაზიარება, არამედ ახალგაზრდებისთვის ისტორიის სასწავლო პროცესის გამარტივება და ჩართვა საქართველოს ისტორიის კულტურულ სიმდიდრეში.</p>
-        </li>
-    </ul>
-
+<div id="content">
+    <h4>დააჭირეთ მეფის სახელს, რათა იხილოთ ინფორმაცია.</h4>
 
 </div>
 

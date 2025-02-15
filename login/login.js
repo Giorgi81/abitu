@@ -1,3 +1,16 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyCf2V8BWPCvsQEjgzQ1_FC4crbBog99UlU",
+    authDomain: "abitu-10865.firebaseapp.com",
+    projectId: "abitu-10865",
+    storageBucket: "abitu-10865.firebasestorage.app",
+    messagingSenderId: "643003315940",
+    appId: "1:643003315940:web:e743df891630b0c0b51ef1",
+    measurementId: "G-ZR4RKHKVYZ"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('loginForm');
     const emailInput = document.getElementById('email');
@@ -26,7 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (valid) {
             loginError.hidden = true;
-            window.location.href = '../main/main.html';
+
+            auth.signInWithEmailAndPassword(emailInput.value, passwordInput.value)
+                .then((userCredential) => {
+                    alert("Login successful!");
+                    window.location.href = '../main/main.html';
+                })
+                .catch((error) => {
+                    loginError.hidden = false;
+                    loginError.textContent = error.message;
+                });
         } else {
             loginError.hidden = false;
         }
